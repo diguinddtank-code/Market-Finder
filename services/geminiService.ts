@@ -1,7 +1,9 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { MarketPotentialData } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// NOTE: Hardcoding API keys in frontend code is not recommended for production security.
+// Ensure you have strict quotas set in Google AI Studio.
+const ai = new GoogleGenAI({ apiKey: "AIzaSyArrRftYNITbDwRSs6HEzTVrnbepXlaw2Q" });
 
 const responseSchema: Schema = {
   type: Type.OBJECT,
